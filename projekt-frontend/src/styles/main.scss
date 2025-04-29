@@ -1,0 +1,97 @@
+@import '_variables';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font;
+  background-color: $secondary-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+#logo {
+    color: #ffff;
+}
+
+#menu {
+    height: 7vh;
+    background-color: $nav-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+    #mainLeft {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        p{
+            font-size: 22px;
+            font-style: italic;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+
+        ul {
+            display: flex;
+            list-style: none;
+            width: 30vw;
+            justify-content: space-around;
+            li {
+                direction: none;
+                
+                a {
+                    cursor: pointer;
+                    color:white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    #mainRight {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        #signup {
+            border: 1px solid $nav-color;
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 10px;
+            color: $nav-color;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        #login {
+            border: 1px solid $nav-color;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: rgb(219,69,69);
+            color: #ffff;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
