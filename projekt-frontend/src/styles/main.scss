@@ -95,3 +95,72 @@ a {
         }
     }
 }
+
+aside {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    #szukajka {
+        background-color: #ffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 40px;
+        border-radius: 10px;
+        margin-top: 20px;
+        input {
+            width: 80%;
+            border: none;
+        }
+    }
+
+    #kategorie {
+
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+       
+        margin-top: 10px;
+        
+        ul {
+            margin-top: 10px;
+            background-color: #ffff;
+            border-radius: 10px;
+            padding: 5px;
+            list-style: none;
+            li {
+                margin-left: 20px;
+                direction: none;
+                
+                
+                a {
+                    cursor: pointer;
+                    color:white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+#mainControlPanel {
+    width: 50vw;
+}
+
+#mainPane {
+    width: 25vw;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #mainPaneContent {
+        width: 90%;
+        background-color: #ffff;
+        border-radius: 10px;
+        height: 90%;
+    }
+}
